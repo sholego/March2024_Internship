@@ -23,7 +23,7 @@ df = pd.read_csv(file_path1)
 df.set_index("DateTime", inplace=True)
 df.index.name = 'DateTime'
 df['co2_lag'] = df['co2'].diff()
-df = df.dropna()\
+df = df.dropna()
 
 # Decision Tree
 from sklearn.tree import DecisionTreeClassifier
